@@ -1,0 +1,78 @@
+@import "variables.scss";
+.welcome {
+  color: white;
+}
+.hero {
+  background-color: #3c9294;
+  padding: 60px 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.textarea {
+  max-width: 80%;
+  width: 100%;
+  & > h1 {
+    font-size: 2.2em;
+  }
+  & > p {
+    font-size: 1.4em;
+  }
+}
+
+.start {
+  background: #4c9fa1;
+  width: 100%;
+  max-width: 350px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 0;
+  color: white;
+  position: relative;
+  margin-top: 20px;
+  z-index: 1;
+  &:after {
+    content: "→";
+    position: absolute;
+
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(10px, -50%);
+    }
+  }
+}
+.screen {
+  margin-top: -120px;
+  padding-top: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  & > img {
+    background: none;
+    // background: white    ;
+    // z-index: 10;
+    width: 100%;
+  }
+  & > svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    & > polygon {
+      fill: #3c9294;
+    }
+  }
+}

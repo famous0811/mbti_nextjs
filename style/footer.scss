@@ -1,0 +1,51 @@
+@import "variables.scss";
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   width: 100%;
+  padding: 90px 0 60px;
+  font-size: 1em;
+  color: $gray;
+  & > * {
+    margin-top: 20px !important;
+  }
+}
+.footermenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  font-size: 1em;
+  color: $maincolor;
+  align-self: stretch;
+  & > a {
+    margin: 0 15px;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+    &:hover {
+      border-color: $maincolor;
+    }
+  }
+}
+
+.translation {
+  width: 100%;
+  max-width: 80%;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.other {
+  display: inline;
+  color: $maincolor;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+
+  &:hover {
+    border-color: $maincolor;
+  }
+}

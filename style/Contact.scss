@@ -1,0 +1,24 @@
+@import "variables.scss";
+.tell {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px 20px;
+  background: #56ac8a;
+  color: white;
+  & > h1 {
+    font-size: 3.5em;
+  }
+  & > p {
+    font-size: 1.2em;
+  }
+}
+
+.other {
+  margin: 30px 0;
+  color: #336954;
+  line-height: 1.4;
+  & > h4 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+}

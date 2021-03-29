@@ -1,0 +1,75 @@
+@import "variables.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  height: 90px;
+  padding: 20px 30px;
+  top: 0;
+  left: 0;
+  color: $gray !important;
+  background: white;
+  z-index: 10;
+}
+.logo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  // width: 100%;
+  // max-width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   justify-content: space-evenly;
+  font-family: Open Sans, Helvetica Neue, Arial !important;
+  & > ul {
+    // max-width: 80%;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    // justify-content: space-evenly;
+    padding: 10px;
+  }
+}
+
+.language {
+  font-family: Open Sans, Helvetica Neue, Arial !important;
+  &:before {
+    // content: "language";
+    font-family: "Meterail Icon";
+  }
+  font-size: 1.05em;
+  position: relative;
+  padding: 5px 0;
+  &:hover {
+    border-bottom: 1px solid $black;
+  }
+}
+
+.item {
+  font-size: 1.05em;
+  position: relative;
+  margin: 0 15px;
+  padding: 0 30px;
+  &::after {
+    display: none;
+    position: absolute;
+    bottom: calc(-100% - 7px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 4px;
+    content: "";
+    background: $maincolor;
+  }
+  &:hover {
+    &::after {
+      display: block;
+    }
+  }
+}
