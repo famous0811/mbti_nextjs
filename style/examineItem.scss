@@ -1,0 +1,106 @@
+@import "variables.scss";
+// @import "node_modules/@material-ui/icons/Delete";
+.agreed {
+  color: #56ac8a;
+}
+
+.disagreed {
+  color: #5f394d;
+}
+.question {
+  font-size: 1.3em;
+  color: #576071;
+  font-weight: 600;
+}
+.activtion {
+  opacity: 1;
+}
+.disabled {
+  opacity: 0.5;
+}
+
+.examitem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.5s;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 35px 0 20px;
+}
+
+.decision {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 20px;
+  font-weight: 600 !important;
+  font-size: 1.1em;
+}
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  & > div {
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: "done";
+      display: none;
+      color: white;
+      font-family: "Material Icons";
+    }
+  }
+}
+.agree .disagree .neutral {
+  .click {
+    &::before {
+      display: block;
+    }
+  }
+}
+.agree {
+  border: 3px solid #56ac8a;
+  &:hover {
+    background: #56ac8a;
+  }
+}
+.disagree {
+  border: 3px solid #5f394d;
+  &:hover {
+    background: #5f394d;
+  }
+}
+.neutral {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #9b9faa;
+  &:hover {
+    background: #9b9faa;
+  }
+}
+.max {
+  width: 55px;
+  height: 55px;
+}
+.med {
+  width: 45px;
+  height: 45px;
+}
+.min {
+  width: 35px;
+  height: 35px;
+}
+
+// .divider {
+//   height: 1px;
+//   width: 100%;
+//   background: black;
+// }

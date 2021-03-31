@@ -40,8 +40,8 @@ header {
 .language {
   font-family: Open Sans, Helvetica Neue, Arial !important;
   &:before {
-    // content: "language";
-    font-family: "Meterail Icon";
+    content: "language";
+    font-family: "Material Icons";
   }
   font-size: 1.05em;
   position: relative;

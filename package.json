@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "material-design-icons": "^3.0.1",
     "next": "latest",
     "next-compose-plugins": "^2.2.1",
     "node-sass": "^5.0.0",
